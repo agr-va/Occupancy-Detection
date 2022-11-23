@@ -41,9 +41,6 @@ def obtain_count():
     shutil.copy("static/" + str(value) + ".png", "static/curr.png")
     return "200"    
 
-if __name__ == "__main__":
-    app.run(host='192.168.236.199', port=5000)
-
 
 
 
