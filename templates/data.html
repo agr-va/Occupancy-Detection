@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="2">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>DATA PAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Raleway:ital,wght@0,200;1,700&display=swap"
+        rel="stylesheet">
+    <title>particles.js</title>
+    <link rel="stylesheet" href="static/data.css">
+</head>
+
+<body>
+    <!-- Particles.js div -->
+    <script>
+        const fs = require('fs');
+        fs.readFile('static/prediction.txt', (err, data) => {
+            if (err) throw err;
+            console.log(data.toString());
+        })
+    </script>
+    <div id="particles-js">
+        <div class="sign">
+            <span class="fast-flicker">CURR</span>ENT &nbsp;<span class="flicker">D</span>ATA
+        </div>
+        <br><br><br><br>
+
+        <div class="container">
+            <section class="data" id="dataid">
+
+                <div class="row">
+                    <div class="data-col" id="image">
+                        <img src="static/thermal_img.jpg">
+                    </div>
+
+                    <div class="data-col">
+                        <h1>NUMBER OF OCCUPANTS: <h1>
+                        <img src="static/curr.png" width="100" height="100">
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <p> Not working fine? Try calibrating: </p>
+                <a href="/calibrate" target="_blank"> <button class="btn">CALIBERATE</button></a>
+            </section>
+        </div>
+    </div>
+
+    <script src="static/js/particles.js">
+    </script>
+    <script src="static/js/app.js">
+    </script>
+</body>
+
+</html>
